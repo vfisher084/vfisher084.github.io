@@ -1,0 +1,13 @@
+body {
+    background-color:lightpink;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    color:hotpink;
+    text-align: center;
+}
+.assign{
+    display: flex;
+    margin: 10px;
+}
