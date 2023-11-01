@@ -10,13 +10,13 @@ a {
     text-decoration: none;
     color: black;
 }
-.assign{
+.assign {
     display: flex;
     margin: 10px;
     padding: 10px;
     background: hotpink
 }
-.assign img{
+.assign img {
     width: 200px;
     padding: 10px;
     border: 2px solid black;
