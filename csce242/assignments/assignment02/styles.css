@@ -1,0 +1,71 @@
+/* Structure */
+
+#content {
+    background: rgba(188,143,143,0.8);
+    width:75%;
+    margin: auto;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+body {
+    font-family: garamond;
+    background:url(images/clover2.jpg);
+}
+
+/* Typography */
+h1{
+    color:#A54187;
+}
+h2{
+   color:#A54187;
+}
+#bun-info {
+    font-style: italic;
+}
+p{
+    color:black;
+}
+strong {
+    color:#A54187;
+}
+.italic
+{
+   font-style: italic; 
+}
+
+/* Navigation */
+#main-nav a {
+    text-decoration: none;
+    background: pink;
+    color: black;
+    padding: 3px;
+    border-radius: 7px;
+}
+#main-nav a:hover {
+    background: mistyrose;
+
+}
+
+/* Images */
+img {
+    padding: 0px;
+    border: 5px solid #D9D5A0;
+    border-radius: 7px;
+}
+
+/* Table */
+table{
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 4px;
+    
+}
+th{
+    background: #82A668;
+}
+td{
+    background: floralwhite;
+}

@@ -1,0 +1,68 @@
+/* Structure */
+body {
+    background: paleturquoise;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation */
+#main-nav a {
+    text-decoration: none;
+    background: pink;
+    color: black;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+#main nav a:hover {
+    background: salmon;
+
+}
+
+/* Images */
+img {
+    border: 5px solid red;
+    border-radius: 5px;
+}
+/* Tables */
+table{
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 4px;
+}
+th{
+    background: green;
+}
+td{
+    background: blue;
+}
+/* Typography */
+h1 {
+    color: magenta;
+    font-style: italic;
+}
+
+h2 {
+    color: green;
+}
+
+#b-things {
+    font-style: italic;
+}
+
+strong {
+    color:deeppink;
+}
+
+.big {
+    font-size: 30px;
+}
+
+/* Periods for class names, pound symbol for IDs */
+/* use a class when you want to consistently style
+multiple elements throughout the page
+* usean ID when you have a single element on the page
+that will take the style */
+/* class is a type of item, and id is the unique name of an item
