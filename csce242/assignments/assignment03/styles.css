@@ -1,0 +1,149 @@
+/* Structure */
+#main-header {
+    background-color:rosybrown;
+}
+
+#main-content {
+    background-color:rosybrown;
+    width: 100%;
+}
+
+#content {
+    width:100%;
+    margin:auto;
+}
+
+#main-header,
+#main-footer {
+    background: rosybrown;
+    padding:5px;
+}
+
+#main-header {
+   border-radius: 5px 5px 0 0;
+}
+
+#main-footer {
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+}
+
+.flex-container1 {
+    background-color: mistyrose;
+    margin: 40px;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    flex: 50%;
+}
+
+.flex-container2 {
+    background-color:pink;
+    margin: 40px;
+    padding: 5px;
+}
+
+.flex-container3 {
+    background-color:mistyrose;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    color: black;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.left-image {
+    height: auto;
+    width: auto;
+}
+
+.column {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.left-column {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex: wrap;
+}
+
+.center-column {
+    background-color: pink;
+    text-align: left;
+    margin: 0px;
+    padding: 100px;
+}
+
+.center-column ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.center-column ul li {
+    margin: 5px 0;
+    color: black;
+}
+
+.right-column {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex: wrap;
+}
+
+/* Nagivation */
+#main-nav ul {
+    padding-left: 0;
+}
+
+#main-nav li {
+    list-style-type: none;
+    padding: 5px;
+    background-color: pink;
+    border: 1px solid mistyrose;
+    text-align: center;
+    
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main-header h1 {
+    text-align: center;
+    color: mistyrose;
+}
+
+h2 {
+    color: mistyrose;
+    margin: 40px;
+}
+
+/* Larger Resolutions */
+@media (min-width: 900px) {
+    #main-nav ul,
+    .flex-container,
+    .flex-container3,
+    .left-column,
+    .right-column {
+        display: flex;
+    }
+
+    #main-nav li
+     {
+        flex: 1;
+    }
+}
