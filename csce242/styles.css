@@ -25,6 +25,10 @@ body {
     padding: 20px;
 }
 
+#projects {
+    padding: 20px;
+}
+
 .flex-container {
     display: flex;
     padding: 20px;
@@ -69,6 +73,10 @@ body {
 h2 {
     text-align: center;
     color: #323050;
+}
+
+h3 {
+    color: floralwhite;
 }
 
 p {

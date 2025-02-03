@@ -1,0 +1,216 @@
+/** Structure **/
+body {
+    margin: auto;
+    font-family: "Berlingske Sans", "Arial", sans-serif;
+    font-weight: 500;
+}
+
+.header-content {
+    background: black;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    font-family: 'Berlingske Serif', 'Georgia', serif;
+}
+
+#header-nav {
+    background: black;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    font-family: 'Berlingske Serif', 'Georgia', serif;
+    text-align: right;
+}
+
+.title-image {
+    text-align: left;
+}
+
+#subheader-content {
+    background: #73000a;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    font-family: 'Berlingske Serif', 'Georgia', serif;
+}
+
+#main-content {
+    font-family:"Berlingske Sans", "Arial", sans-serif;
+    padding: 10px;
+    color: black;
+    margin: auto;
+}
+
+#big-image {
+    text-align: center;
+    margin: auto;
+}
+
+#intro {
+    text-align: left;
+    padding: 20px;
+}
+
+#intro h3 {
+    font-weight: 500;
+    color:black;
+}
+
+.news {
+    padding: 5px;
+}
+
+.news-img {
+    margin-top: 20px;
+    padding: 5px;
+    text-align: left;
+}
+
+#bottom-header {
+    background:#c7c7c7;
+    margin: auto;
+    padding:5px;
+
+}
+
+#bottom-header h3{
+    color: black;
+}
+
+#bottom-header li {
+    text-align: right;
+}
+
+#sub-footer {
+    background: #73000a;
+    color: white;
+    padding: 10px;
+    margin: auto;
+}
+
+#footer-nav {
+    background: black;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+footer {
+    
+}
+
+
+/** Typography **/
+h3 {
+    color: #73000a;
+}
+
+h4 {
+    color: #73000a;
+}
+
+/** Navigation **/
+#header-nav li {
+    list-style-type: none;
+    padding: 5px;
+    display: inline-block;
+    justify-content: end;
+}
+
+#header-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-container {
+    justify-items: end;
+}
+
+
+#bottom-header li {
+    list-style-type: none;
+    padding: 5px;
+    display: inline-block;
+    text-align: right;
+}
+
+#bottom-header a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer-nav li{
+    list-style-type: none;
+    padding: 5px;
+    display: inline-block;
+}
+
+
+
+
+
+/** Larger resolutions **/
+@media only screen and
+(max-width: 767px) {
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#big-image {
+    display: flex;
+    justify-content: center;
+}
+
+.one {
+    flex: 1;
+    justify-content: start;
+}
+
+.two {
+    flex: 2;
+}
+
+.three {
+    flex: 2;
+}
+
+#intro {
+    flex: 1;
+    justify-content: center;
+}
+
+.columns {
+   display: flex; 
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    flex: 1;
+    flex-basis:33%;
+    box-sizing: border-box;
+}
+
+.news-columns {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+
+
+}
