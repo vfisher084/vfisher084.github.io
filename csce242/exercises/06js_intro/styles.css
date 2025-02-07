@@ -1,6 +1,12 @@
 /** Structure **/
+:root {
+    --main-background-color: #CDECEF;
+    --primary-color: #2B91AD;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: var(--main-background-color);
 }
 
 #content{
@@ -53,13 +59,13 @@ header, footer {
 
 #main-nav li {
     list-style-type: none;
-    background: purple;
+    background: darkseagreen;
     text-align: center;
     border-bottom: 1px solid white;
 }
 
 #main-nav a{
-    color: darkseagreen;
+    color: purple;
     text-decoration: none;
 }
 
@@ -103,4 +109,16 @@ header, footer {
         flex-basis:30%;
     }
     
+}
+
+.sad {
+    color:blue;
+}
+
+.hidden {
+    display: none;
+}
+
+.happy {
+    color:pink;
 }
