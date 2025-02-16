@@ -42,3 +42,84 @@ document.getElementById("txt-emotion").onkeyup = (event) => {
     "You are feeling " + event.currentTarget.value;
     
 }
+
+//show color message
+document.getElementById("btn-choose-color").onclick = () => {
+    const color = document.getElementById("txt-color").value.toLowerCase().trim();
+    let mood = " ";
+
+    if(color == "blue")
+    {
+        mood = "sad";
+    }
+    else if(color == "yellow")
+    {
+        mood = "mellow";
+    }
+    else
+    {
+        mood = "undefined";
+    }
+    
+    document.getElementById("color-message").innerHTML =
+    `You chose ${color}. You are feeling ${mood}.`;
+}
+
+
+//toggling the nav
+document.getElementById("toggle-nav").onclick = () => {
+    document.getElementById("nav-items").classList.toggle("hide-small");
+}
+
+//circle movement
+
+let pos = 0;
+const changeCirclePos = (increment) => {
+    pos += increment;
+    document.getElementById("circle").style.setProperty("top", pos + "px");
+}
+//down
+document.getElementById("btn-down").onclick = () => {
+    changeCirclePos(10);
+}
+
+//up
+document.getElementById("btn-up").onclick = () => {
+    changeCirclePos(-10);
+}
+
+document.getElementById("btn-pick-color").onchange = (event) => {
+    const color = event.currentTarget.value;
+   // document.getElementById("circle").style.setProperty("background", color);
+   document.getElementById("circle").style.setProperty("--circle-color", color);
+}
+
+//Donations thermometer
+
+const GOAL = 1000;
+let donations = 0;
+
+document.getElementById("goal-display").innerHTML = `Goal $${GOAL}`;
+
+//when add clicked if donation is negative display the error
+document.getElementById("btn-add-donation").onclick = () => {
+    //validate donation amount
+    const donation = document.getElementById("txt-donation").value;
+    document.getElementById("donation-error").classList.add("hidden");
+
+    if(isNaN(donation) || donation <= 0){
+        document.getElementById("donation-error").classList.remove("hidden");
+        return;
+    }
+
+    //otherwise update the donations and display in console
+    donations += donation;
+    donationPercent = donations / GOAL * 100;
+
+    //show donation message
+    document.getElementById("donation-message").innerHTML = `$${GOAL - donations} to go!`;
+
+    //update thermometer
+    document.getElementById("thermometer").style.setProperty("--donation-percent", donationPercent + "%");
+}
+
