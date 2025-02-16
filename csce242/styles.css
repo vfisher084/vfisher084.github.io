@@ -56,7 +56,8 @@ body {
 }
 
 .col2,
-.col4 {
+.col4,
+.col6 {
     background-color: #21445B;
 }
 
@@ -100,7 +101,8 @@ a {
     .col2,
     .col3,
     .col4,
-    .col5
+    .col5,
+    .col6
      {
         flex: 1;
         width: 30%;
