@@ -1,0 +1,191 @@
+/** Structure **/
+
+:root {
+    --body-background-color: #f7f7f7;
+    --header-footer-background-color: #898d7c;
+    --nav-background-color: #c0c4b5;
+    --big-container-outline-color: #601e2a;
+    --container-outline-color: #601e2a;
+}
+
+body {
+    font-family: serif;
+    background: var(--body-background-color);
+}
+
+#booknook-header {
+    background: var(--header-footer-background-color);
+    text-align: center;
+    padding: 0.5px;
+    outline: 2px solid var(--big-container-outline-color);
+    border-radius: 5px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 5px;
+    
+}
+
+.genre-menu,
+.price-menu,
+.category-menu,
+.format-menu,
+.publication-date-menu,
+.ratings-menu {
+    outline: 1px solid var(--container-outline-color);
+    padding: 5px;
+    border-radius: 5px;
+    flex: 1 0 30%;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content:flex-end;
+    padding: 10px;
+}
+
+.book-container {
+    flex: 1 0 21%;
+    padding: 10px;
+    outline: 1px solid var(--container-outline-color);
+    gap:10px;
+}
+
+.book-container a{
+    color: black;
+    text-decoration: none;
+}
+
+#book-img {
+    text-align: center;
+}
+
+#title-author-info {
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    background: var(--header-footer-background-color);
+    padding: 10px;
+    outline: 2px solid var(--big-container-outline-color);
+    border-radius: 5px;
+}
+
+/** Navigation **/
+
+#toggle-nav div {
+    width:35px;
+    height:2px;
+    background-color: #601e2a;
+    margin: 6px 0;
+}
+
+#main-nav ul {
+    padding-left:0;
+}
+
+#main-nav li {
+    list-style-type: none;
+    background: var(--nav-background-color);
+    text-align: center;
+    border-top: 1px solid #601e2a;
+    border-bottom: 1px solid #601e2a;
+    padding: 20px;
+    font-size: 15px;
+    margin: auto;
+}
+
+#main-nav a{
+    color: black;
+    text-decoration: none;
+}
+
+.hide-small {
+    display: none;
+}
+
+/** Typography **/
+
+h1 {
+    font-size: 60px;
+    color: #601e2a;
+}
+
+h2 {
+    font-weight: 100;
+}
+
+h3,
+h4 {
+    font-weight: lighter;
+}
+
+/** Larger resolutions **/
+@media only screen and (min-width: 768px) {
+
+    .nav-columns {
+        display: flex;
+    }
+
+    #main-nav li{
+        flex: 1;
+    }
+
+    .hide-small {
+        display: flex;
+    }
+
+    #toggle-nav {
+        display: none;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .genre-menu,
+    .price-menu,
+    .category-menu,
+    .format-menu,
+    .publication-date-menu,
+    .ratings-menu {
+        flex: 1
+}
+
+    .container2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        justify-content:flex-end;
+        padding: 10px;
+
+    }
+
+    .book-container {
+        flex: 1 0 21%;
+    }
+    
+
+}
+
