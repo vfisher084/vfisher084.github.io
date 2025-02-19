@@ -4,8 +4,9 @@
     --body-background-color: #f7f7f7;
     --header-footer-background-color: #898d7c;
     --nav-background-color: #c0c4b5;
-    --big-container-outline-color: #601e2a;
-    --container-outline-color: #601e2a;
+    --big-container-outline-color: #c0c4b5;
+    --container-outline-color: #c0c4b5;
+    --h1-color: #F2EADF;
 }
 
 body {
@@ -63,7 +64,7 @@ footer {
 #toggle-nav div {
     width:35px;
     height:2px;
-    background-color: #601e2a;
+    background-color: black;
     margin: 6px 0;
 }
 
@@ -75,8 +76,8 @@ footer {
     list-style-type: none;
     background: var(--nav-background-color);
     text-align: center;
-    border-top: 1px solid #601e2a;
-    border-bottom: 1px solid #601e2a;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     padding: 20px;
     font-size: 15px;
     margin: auto;
@@ -95,12 +96,12 @@ footer {
 
 h1 {
     font-size: 60px;
-    color: #601e2a;
+    color: var(--h1-color);
 }
 
 h2 {
     font-weight: 100;
-    color: #601e2a;
+    color: black;
 }
 
 h3,
