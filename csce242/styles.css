@@ -1,9 +1,22 @@
 /* Structure */
+:root {
+    --body-background-color: #806361;
+    --my-name-color: #CC9F9B;
+    --main-header-color: #FFC7C2;
+    --col1-color: #9a605c;
+    --col2-color: #9a605c;
+    --img-outline-color: #806361;
+    --h2-text-color: #9a605c;
+    --h2-background-color: #CC9F9B;
+    --h3-color: #FFC7C2;
+
+
+}
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
-    background-color: #1A6566;
+    background-color: var(--body-background-color);
 }
 
 #name {
@@ -12,13 +25,13 @@ body {
     left: 5px;
     margin: 0;
     padding: 5px;
-    color: #323050;
+    color: var(--my-name-color);
 }
 
 #main-header {
     text-align: center;
     padding: 20px;
-    color: floralwhite;
+    color: var(--main-header-color);
 }
 
 #assignments {
@@ -38,6 +51,7 @@ body {
     gap: 20px;
 }
 
+
 .column {
     padding: 5px;
     margin: 5px;
@@ -49,43 +63,44 @@ body {
     text-align: center;
 }
 
-.col1,
-.col3,
-.col5 {
-    background-color: #45214A;
+.col1 {
+    background-color: var(--col1-color);
+    outline: 2px solid var(--main-header-color);
 }
 
-.col2,
-.col4,
-.col6 {
-    background-color: #21445B;
+.col2 {
+    background-color: var(--col2-color);
+    outline: 2px solid var(--main-header-color);
 }
 
 .column img {
     width: 80%;
     height: auto;
     margin: 20px 0;
-    border: 5px solid #1A6566;
+    border: 5px solid var(--img-outline-color);
     border-radius: 7px;
 }
 
 /* Typography */
 h2 {
     text-align: center;
-    color: #323050;
+    color: var(--h2-text-color);
+    background: var(--h2-background-color);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 h3 {
-    color: floralwhite;
+    color: var(--h3-color);
 }
 
 p {
-    color: floralwhite;
+    color: var(--h3-color);
 }
 
 a {
     text-decoration: none;
-    color: floralwhite;
+    color: var(--h3-color);
 }
 
 /* Larger Resolutions */
@@ -95,23 +110,15 @@ a {
         display: flex;
         align-items: stretch;
         flex-wrap: wrap;
+        flex-direction: row;
     }
 
     .col1,
-    .col2,
-    .col3,
-    .col4,
-    .col5,
-    .col6
+    .col2
      {
-        flex: 1;
-        width: 30%;
+        flex: 2;
+        min-width: 300px;
     }
 
-    .column {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    }
+}
 

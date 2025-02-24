@@ -118,12 +118,6 @@ header, footer {
     color: red;
 }
 
-#ladder {
-    border-right: black;
-    border-left: black;
-    
-}
-
 /** Larger resolutions **/
 @media only screen and (min-width: 768px) {
     /**

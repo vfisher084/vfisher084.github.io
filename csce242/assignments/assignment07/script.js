@@ -1,4 +1,4 @@
-//Draw Stairs
+//draw Stairs
 document.getElementById("draw-stairs-btn").onclick = () => {
     const stairs = document.getElementById("stairs");
     const climbBtn = document.getElementById("climb-stairs-btn");
@@ -23,8 +23,6 @@ document.getElementById("draw-stairs-btn").onclick = () => {
         stairs.append(stair);
     }
 
-    document.getElementById("climb-stairs-btn").style.display = "block";
-
     //stick figure
     const stickFigure = document.createElement("img");
     stickFigure.src = "images/left.png";
@@ -35,19 +33,31 @@ document.getElementById("draw-stairs-btn").onclick = () => {
     stickFigure.style.width = "50px";
 
     stairs.append(stickFigure);
+    climbBtn.style.display = "block";
 }
 
 //climbing stairs
 document.getElementById("climb-stairs-btn").onclick = () => {
     const stickFigure = document.getElementById("stick-figure");
     let step = 0;
+    let useLeftImage = true;
     let climbing = setInterval(() => {
         if(step >=10) {
             clearInterval(climbing);
             return;
         }
-        stickFigure.src = step % 2 === 0 ? "images/right.png" : "images/left.png";
+
+        if(useLeftImage)
+        {
+            stickFigure.src = "images/left.png";
+        }
+        else
+        {
+            stickFigure.src = "images/right.png";
+        }
+
+        useLeftImage = !useLeftImage;
         stickFigure.style.bottom = `${step * 60}px`;
         step++;
-    }, 500);
+    }, 600);
 }

@@ -25,3 +25,69 @@ document.getElementById("btn-display").onclick = () => {
         }
     }
 }
+
+//Counting section
+let count = 0;
+let updateCount;
+
+document.querySelector("#btn-count").onclick = (event) => {
+    //start the counter
+    if(event.currentTarget.innerHTML.toLowerCase() == "start") {
+        event.currentTarget.innerHTML = "Stop";
+
+        updateCount = setInterval(()=>{
+            count++;
+            document.querySelector("#count-display").innerHTML = count;
+        },700);
+    }
+    //stop the counter
+    else {
+        event.currentTarget.innerHTML = "Start";
+        clearInterval(updateCount);
+    }
+}
+
+document.querySelector("#btn-reset").onclick = () => {
+    count = 0;
+    clearInterval(updateCount);
+    document.querySelector("#btn-count").innerHTML = "Start";
+    document.querySelector("#count-display").innerHTML = "";
+}
+
+//Toys Section
+document.querySelector("#show-toys-btn").onclick = (event) => {
+    event.currentTarget.disabled = true; //can only click button once
+    const toys = ["Barbie", "car", "Mr Potato Head", "Elmo"];
+
+    event.currentTarget.disabled = true;
+
+    const ul = document.createElement("ul");
+    document.getElementById("toys-display").append(ul);
+
+    toys.forEach((toy, i)=>{
+        const li = document.createElement("li");
+        ul.append(li);
+        li.innerHTML = `${i+1}. ${toy}`; 
+    })
+    
+}
+
+//loop thru associative array
+document.getElementById("toys-desc-btn").onclick = () => {
+    const toys = [];
+    toys["Barbie"] = "Your favorite doll";
+    toys["car"] = "VROOM";
+    toys["Mr Potato Head"] = "Tripped over this when I was little";
+    toys["Elmo"] = "Red dude";
+
+    const section = document.getElementById("display-toy-descs");
+
+    for(let toy in toys) {
+        const p = document.createElement("p");
+        section.append(p);
+        p.innerHTML = (`${toy}: ${toys[toy]}`);
+        p.onclick = () => {
+            document.getElementById("toy-message").innerHTML = `Best ${toy} ever! ${toys[toy]}`;
+        }
+    }
+}
