@@ -45,7 +45,7 @@ a {
     color: #8C2703;
 }
 
-
+/** Pizza Boxes **/
 .pizza-container {
     display: flex;
     flex-wrap: wrap;
@@ -54,7 +54,6 @@ a {
 }
 
 .pizza-box {
-    display: inline-block;
     text-align: center;
     padding: 20px;
     transition: transform 0.3s ease;
@@ -68,8 +67,8 @@ a {
 .pizza-image {
     width: 200px;
     height: 200px;
-    object-fit: cover;
     box-shadow: 5px 5px 5px #8C2703;
+    margin-top: 10px;
 }
 
 .modal-content {
@@ -93,5 +92,4 @@ a {
     cursor: pointer;
     color: #8C2703;
     text-align: right;
-    
 }
