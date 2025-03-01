@@ -1,0 +1,199 @@
+/** Structure **/
+
+:root {
+    --body-background-color: #f7f7f7;
+    --header-footer-background-color: #898d7c;
+    --nav-background-color: #c0c4b5;
+    --big-container-outline-color: #c0c4b5;
+    --container-outline-color: #c0c4b5;
+    --h1-color: #F2EADF;
+}
+
+body {
+    font-family: serif;
+    background: var(--body-background-color);
+}
+
+#booknook-header {
+    background: var(--header-footer-background-color);
+    text-align: center;
+    padding: 0.5px;
+    outline: 2px solid var(--big-container-outline-color);
+    border-radius: 5px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#book-img {
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    outline: 2px solid var(--container-outline-color);
+    padding: 10px;
+}
+
+#book-info {
+    text-align: left;
+    padding: 10px;
+}
+
+.container2 {
+    display: flex;
+    align-items: space-evenly;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#reviews,
+#add-to-cart,
+#quantity,
+#format,
+#similar-title {
+    padding: 10px;
+}
+
+#add-to-cart {
+    outline: 1px solid var(--container-outline-color);
+    border-radius: 20px;
+    text-align: center;
+}
+
+#similar-section {
+    background-color: #eeece8;
+    border-radius: 10px;
+}
+
+#similar-books {
+    display: flex;
+    flex-direction: row;
+}
+
+#book {
+    padding: 10px;
+}
+
+#book a {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    background: var(--header-footer-background-color);
+    padding: 10px;
+    outline: 2px solid var(--big-container-outline-color);
+    border-radius: 5px;
+}
+
+/** Navigation **/
+
+#toggle-nav div {
+    width:35px;
+    height:2px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+#main-nav ul {
+    padding-left:0;
+}
+
+#main-nav li {
+    list-style-type: none;
+    background: var(--nav-background-color);
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    font-size: 15px;
+    margin: auto;
+}
+
+#main-nav a{
+    color: black;
+    text-decoration: none;
+}
+
+.hide-small {
+    display: none;
+}
+
+/** Typography **/
+
+h1 {
+    font-size: 60px;
+    color: var(--h1-color);
+}
+
+h2 {
+    font-weight: 100;
+}
+
+h3,
+h4 {
+    font-weight: lighter;
+}
+
+/** Larger resolutions **/
+@media only screen and (min-width: 768px) {
+
+    .nav-columns {
+        display: flex;
+    }
+
+    #main-nav li{
+        flex: 1;
+    }
+
+    .hide-small {
+        display: flex;
+    }
+
+    #toggle-nav {
+        display: none;
+    }
+    
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-grow: 1;
+        min-height: calc(100vh - 200px); /* needed to fill the screen the normal amount */
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .container1 {
+        display: flex;
+        flex: 2;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .container2 {
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #similar-books {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
