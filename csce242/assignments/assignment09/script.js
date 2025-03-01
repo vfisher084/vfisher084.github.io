@@ -24,6 +24,7 @@ class Pizza {
         const modalContent = document.getElementById("modalContent");
         modalContent.innerHTML = `
             <div class="w3-animate-top modal-content">
+                <span class="close-btn" onclick="document.getElementById('pizzaModal').style.display='none'">&times;</span>
                 <div id="text-div">
                     <h4>${this.name}</h4>
                     <p><strong>Ingredients:</strong> ${this.ingredients}</p>
