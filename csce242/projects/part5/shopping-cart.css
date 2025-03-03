@@ -84,6 +84,10 @@ footer {
     margin: 6px 0;
 }
 
+#toggle-nav {
+    cursor: pointer;
+}
+
 #main-nav ul {
     padding-left:0;
 }
@@ -102,6 +106,10 @@ footer {
 #main-nav a{
     color: black;
     text-decoration: none;
+}
+
+#main-nav a:hover {
+    color: var(--h1-color);
 }
 
 .hide-small {

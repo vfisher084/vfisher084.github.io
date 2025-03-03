@@ -42,8 +42,7 @@ body {
 }
 
 img {
-    outline: 2px solid var(--container-outline-color);
-    padding: 10px;
+    box-shadow: 5px 5px 5px gray; 
 }
 
 #book-info {
@@ -66,6 +65,12 @@ img {
     padding: 10px;
 }
 
+#r-q-f {
+    background-color: #eeece8;
+    border-radius: 10px;
+    min-width: 100%;
+}
+
 #add-to-cart {
     outline: 1px solid var(--container-outline-color);
     border-radius: 20px;
@@ -75,6 +80,7 @@ img {
 #similar-section {
     background-color: #eeece8;
     border-radius: 10px;
+    min-width: 100%;
 }
 
 #similar-books {
@@ -91,6 +97,7 @@ img {
     text-decoration: none;
 }
 
+
 footer {
     text-align: center;
     background: var(--header-footer-background-color);
@@ -106,6 +113,10 @@ footer {
     height:2px;
     background-color: black;
     margin: 6px 0;
+}
+
+#toggle-nav {
+    cursor: pointer;
 }
 
 #main-nav ul {
@@ -126,6 +137,10 @@ footer {
 #main-nav a{
     color: black;
     text-decoration: none;
+}
+
+#main-nav a:hover {
+    color: var(--h1-color);
 }
 
 .hide-small {
