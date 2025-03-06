@@ -1,6 +1,5 @@
-//Book Details JSON file
+
 [
-    //Fourth Wing
     {
         "title": "Fourth Wing",
         "author": "Rebecca Yarros",
@@ -15,7 +14,6 @@
         ],
         "quantity": 30
     },
-    //When the Moon Hatched
     {
         "title": "When the Moon Hatched",
         "author": "Sarah A. Parker",
@@ -30,7 +28,6 @@
         ],
         "quantity": 30
     },
-    //The Hazel Wood
     {
         "title": "The Hazel Wood",
         "author": "Melissa Albert",
@@ -45,7 +42,6 @@
         ],
         "quantity": 30
     },
-    //A Winter's Promise
     {
         "title": "A Winter's Promise",
         "author": "Christelle Dabos",
@@ -60,7 +56,6 @@
         ],
         "quantity": 30
     },
-    //The Housemaid's Secret
     {
         "title": "The Housemaid's Secret",
         "author": "Freida McFadden",
@@ -75,7 +70,6 @@
         ],
         "quantity": 30
     },
-    //The Lion, the Witch and the Wardrobe
     {
         "title": "The Lion, the Witch and the Wardrobe",
         "author": "C.S. Lewis",
@@ -90,7 +84,6 @@
         ],
         "quantity": 30
     },
-    //The Summer I Turned Pretty
     {
         "title": "The Summer I Turned Pretty",
         "author": "Jenny Han",
@@ -105,7 +98,6 @@
         ],
         "quantity": 30
     },
-    //The Frozen River
     {
         "title": "The Frozen River",
         "author": "Ariel Lawhon",
@@ -119,5 +111,5 @@
             "I loved it!"
         ],
         "quantity": 30
-    },
+    }
 ]
