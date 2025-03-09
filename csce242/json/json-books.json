@@ -7,7 +7,7 @@
         "description": "Desc",
         "price": "29.99",
         "format": ["Hardcover", "Paperback", "e-Book"],
-        "image": "images/fourth-wing.jpg",
+        "image": "images/fourth-wing2.jpg",
         "genre": ["Romance", "Fiction", "Fantasy"],
         "reviews": [
             "Great book!",
