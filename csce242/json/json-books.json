@@ -52,7 +52,7 @@
         "description": "Desc",
         "price": "12.99",
         "format": ["Paperback", "e-Book"],
-        "image": "images/winterspromise2.jpg",
+        "image": "images/awp2.jpg",
         "genre": ["Fiction", "Fantasy", "Sci-Fi"],
         "reviews": [
             "Great book!",
