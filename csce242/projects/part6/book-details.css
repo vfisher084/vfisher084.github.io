@@ -69,6 +69,7 @@ img {
     background-color: #eeece8;
     border-radius: 10px;
     min-width: 100%;
+    padding-bottom: 10px;
 }
 
 #add-to-cart {
