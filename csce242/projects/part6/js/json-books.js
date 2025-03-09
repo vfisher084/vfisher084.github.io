@@ -44,6 +44,26 @@ const showBooks = async() => {
                 const formattedDescription = book.description.replace(/\n/g, "<p>");
                 description.innerHTML = `<strong>Description:</strong> ${formattedDescription}`;
             }
+            //book reviews
+            const reviews = document.querySelector("#reviews");
+            if(reviews) {
+                book.reviews.forEach(review => {
+                    const p = document.createElement("p");
+                    p.textContent = review;
+                    reviews.append(p);
+                });
+            }
+            //available quantity
+            const quantity = document.querySelector("#quantity");
+            if(quantity) {
+                quantity.textContent = `Quantity Available: ${book.quantity}`;
+            }
+            //available formats
+            const formats = document.querySelector("#format");
+            if(formats) {
+                
+                    formats.textContent = `Available Formats: ${book.format}`;
+            }
         }
     }
 }

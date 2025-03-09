@@ -6,12 +6,12 @@
         "author": "Rebecca Yarros",
         "description": "Twenty-year-old Violet Sorrengail was supposed to enter the Scribe Quadrant, living a quiet life among books and history. Now, the commanding general — also known as her tough-as-talons mother — has ordered Violet to join the hundreds of candidates striving to become the elite of Navarre: dragon riders.\n But when you're smaller than everyone else and your body is brittle, death is only a heartbeat away... because dragons don't bond to \"fragile\" humans. They incinerate them.\n With fewer dragons willing to bond than cadets, most would kill Violet to better their own chances of success. The rest would kill her just for being her mother's daughter — like Xaden Riorson, the most powerful and ruthless windleader in the Riders Quadrant.\n She'll need every edge her wits can give her just to see the next sunrise.\n Yet, with every day that passes, the war outside grows more deadly, the kingdom's protective wards are failing, and the death toll continues to rise. Even worse, Violet begins to suspect leadership is hiding a terrible secret.\n Friends, enemies, lovers. Everyone at Basgiath War College has an agenda — because once you enter, there are ony two ways out: graduate or die (rebeccayarros.com).",
         "price": "29.99",
-        "format": ["Hardcover", "Paperback", "e-Book"],
+        "format": ["Hardcover", " Paperback", " e-Book"],
         "image": "images/fourthwing2.jpg",
         "genre": ["Romance", "Fiction", "Fantasy"],
         "reviews": [
-            "Great book!",
-            "I loved it!"
+            "\"Great book\"!",
+            "\"I loved it!\""
         ],
         "quantity": 30
     },
@@ -25,8 +25,9 @@
         "image": "images/wtmh2.jpg",
         "genre": ["Romance", "Fiction", "Fantasy"],
         "reviews": [
-            "Great book!",
-            "I loved it!"
+            "\"Great book!\"",
+            "\"I loved it!\"",
+            "\"I couldn't put it down!\""
         ],
         "quantity": 30
     },
@@ -40,8 +41,8 @@
         "image": "images/thehazelwood2.jpg",
         "genre": ["Fiction", "Fantasy", "Mystery"],
         "reviews": [
-            "Great book!",
-            "I loved it!"
+            "\"Great book\"!",
+            "\"I loved it!\""
         ],
         "quantity": 30
     },
@@ -55,8 +56,8 @@
         "image": "images/awp2.jpg",
         "genre": ["Fiction", "Fantasy", "Sci-Fi"],
         "reviews": [
-            "Great book!",
-            "I loved it!"
+            "\"Great book\"!",
+            "\"I loved it!\""
         ],
         "quantity": 30
     },
@@ -70,8 +71,8 @@
         "image": "images/housemaid2.jpg",
         "genre": ["Fiction", "Thriller", "Mystery"],
         "reviews": [
-            "Great book!",
-            "I loved it!"
+            "\"Great book\"!",
+            "\"I loved it!\""
         ],
         "quantity": 30
     },
@@ -85,8 +86,8 @@
         "image": "images/narnia2.jpg",
         "genre": ["Fiction", "Fantasy"],
         "reviews": [
-            "Great book!",
-            "I loved it!"
+            "\"Great book\"!",
+            "\"I loved it!\""
         ],
         "quantity": 30
     },
@@ -100,8 +101,8 @@
         "image": "images/tsitp2.jpg",
         "genre": ["Romance", "Fiction", "Young Adult"],
         "reviews": [
-            "Great book!",
-            "I loved it!"
+            "\"Great book\"!",
+            "\"I loved it!\""
         ],
         "quantity": 30
     },
@@ -111,12 +112,12 @@
         "author": "Ariel Lawhon",
         "description": "DeMaine, 1789: When the Kennebec River freezes, entombing a man in the ice, Martha Ballard is summoned to examine the body and determine cause of death. As a midwife and healer, she is privy to much of what goes on behind closed doors in Hallowell. Her diary is a record of every birth and death, crime and debacle that unfolds in the close-knit community. Months earlier, Martha documented the details of an alleged rape committed by two of the town's most respected gentlemen—one of whom has now been found dead in the ice. But when a local physician undermines her conclusion, declaring the death to be an accident, Martha is forced to investigate the shocking murder on her own.\nOver the course of one winter, as the trial nears, and whispers and prejudices mount, Martha doggedly pursues the truth. Her diary soon lands at the center of the scandal, implicating those she loves, and compelling Martha to decide where her own loyalties lie.\nClever, layered, and subversive, Ariel Lawhon's newest offering introduces an unsung heroine who refused to accept anything less than justice at a time when women were considered best seen and not heard. The Frozen River is a thrilling, tense, and tender story about a remarkable woman who left an unparalleled legacy yet remains nearly forgotten to this day (goodreads.com)",
         "price": "18.99",
-        "format": ["Paperback", "e-Book"],
+        "format": ["Paperback", " e-Book"],
         "image": "images/frozenriver2.jpg",
         "genre": ["Fiction", "Mystery"],
         "reviews": [
-            "Great book!",
-            "I loved it!"
+            "\"Great book\"!",
+            "\"I loved it!\""
         ],
         "quantity": 30
     }
