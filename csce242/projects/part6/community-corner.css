@@ -60,9 +60,10 @@ body {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    outline: 1px solid var(--container-outline-color);
+    outline: 1px solid var(--header-footer-background-color);
     border-radius: 10px;
     text-align: center;
+    background-color: var(--container-outline-color);
 }
 
 img {
